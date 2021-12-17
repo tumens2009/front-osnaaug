@@ -82,3 +82,5 @@ typings/
 .umi
 .umi-production
 .umi-test
+*.sw*
+*.un~
