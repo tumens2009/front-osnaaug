@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React from 'react';
-import initialState from '/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/.umi/plugin-initial-state/models/initialState';
+import initialState from '/Users/tumengerel/Documents/GitHub/front/src/.umi/plugin-initial-state/models/initialState';
 
 // @ts-ignore
 import Dispatcher from './helpers/dispatcher';

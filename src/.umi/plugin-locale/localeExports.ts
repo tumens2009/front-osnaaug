@@ -3,11 +3,11 @@ import {
   createIntl,
   IntlShape,
   MessageDescriptor,
-} from '/Users/tumengerel/Documents/GitHub/front/ams-front-ts/node_modules/@umijs/plugin-locale/node_modules/react-intl';
+} from '/Users/tumengerel/Documents/GitHub/front/node_modules/@umijs/plugin-locale/node_modules/react-intl';
 import { ApplyPluginsType } from 'umi';
 import { event, LANG_CHANGE_EVENT } from './locale';
 // @ts-ignore
-import warning from '/Users/tumengerel/Documents/GitHub/front/ams-front-ts/node_modules/warning/warning.js';
+import warning from '/Users/tumengerel/Documents/GitHub/front/node_modules/warning/warning.js';
 
 import { plugin } from '../core/plugin';
 
@@ -34,16 +34,16 @@ export {
   defineMessages,
   injectIntl,
   useIntl,
-} from '/Users/tumengerel/Documents/GitHub/front/ams-front-ts/node_modules/@umijs/plugin-locale/node_modules/react-intl';
+} from '/Users/tumengerel/Documents/GitHub/front/node_modules/@umijs/plugin-locale/node_modules/react-intl';
 
 let g_intl: IntlShape;
 
 const useLocalStorage = true;
 
 import enUS0 from 'antd/es/locale/en_US';
-import lang_enUS0 from "/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/locales/en-US.ts";
+import lang_enUS0 from "/Users/tumengerel/Documents/GitHub/front/src/locales/en-US.ts";
 import mnMN0 from 'antd/es/locale/mn_MN';
-import lang_mnMN0 from "/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/locales/mn-MN.ts";
+import lang_mnMN0 from "/Users/tumengerel/Documents/GitHub/front/src/locales/mn-MN.ts";
 
 export const localeInfo: {[key: string]: any} = {
   'en-US': {

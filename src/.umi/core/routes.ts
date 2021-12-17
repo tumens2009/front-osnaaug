@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React from 'react';
-import { ApplyPluginsType, dynamic } from '/Users/tumengerel/Documents/GitHub/front/ams-front-ts/node_modules/@umijs/runtime';
+import { ApplyPluginsType, dynamic } from '/Users/tumengerel/Documents/GitHub/front/node_modules/@umijs/runtime';
 import * as umiExports from './umiExports';
 import { plugin } from './plugin';
 import LoadingComponent from '@ant-design/pro-layout/es/PageLoading';
@@ -9,11 +9,11 @@ export function getRoutes() {
   const routes = [
   {
     "path": "/umi/plugin/openapi",
-    "component": dynamic({ loader: () => import(/* webpackChunkName: '.umi__plugin-openapi__openapi' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/.umi/plugin-openapi/openapi.tsx'), loading: LoadingComponent})
+    "component": dynamic({ loader: () => import(/* webpackChunkName: '.umi__plugin-openapi__openapi' */'/Users/tumengerel/Documents/GitHub/front/src/.umi/plugin-openapi/openapi.tsx'), loading: LoadingComponent})
   },
   {
     "path": "/",
-    "component": dynamic({ loader: () => import(/* webpackChunkName: '.umi__plugin-layout__Layout' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/.umi/plugin-layout/Layout.tsx'), loading: LoadingComponent}),
+    "component": dynamic({ loader: () => import(/* webpackChunkName: '.umi__plugin-layout__Layout' */'/Users/tumengerel/Documents/GitHub/front/src/.umi/plugin-layout/Layout.tsx'), loading: LoadingComponent}),
     "routes": [
       {
         "path": "/~demos/:uuid",
@@ -22,7 +22,7 @@ export function getRoutes() {
         "component": ((props) => dynamic({
           loader: async () => {
             const React = await import('react');
-            const { default: getDemoRenderArgs } = await import(/* webpackChunkName: 'dumi_demos' */ '/Users/tumengerel/Documents/GitHub/front/ams-front-ts/node_modules/@umijs/preset-dumi/lib/plugins/features/demo/getDemoRenderArgs');
+            const { default: getDemoRenderArgs } = await import(/* webpackChunkName: 'dumi_demos' */ '/Users/tumengerel/Documents/GitHub/front/node_modules/@umijs/preset-dumi/lib/plugins/features/demo/getDemoRenderArgs');
             const { default: Previewer } = await import(/* webpackChunkName: 'dumi_demos' */ 'dumi-theme-default/es/builtins/Previewer.js');
             const { usePrefersColor, context } = await import(/* webpackChunkName: 'dumi_demos' */ 'dumi/theme');
 
@@ -69,17 +69,17 @@ export function getRoutes() {
         "__dumiRoot": true,
         "layout": false,
         "path": "/~docs",
-        "wrappers": [dynamic({ loader: () => import(/* webpackChunkName: 'wrappers' */'../dumi/layout'), loading: LoadingComponent}), dynamic({ loader: () => import(/* webpackChunkName: 'wrappers' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/node_modules/dumi-theme-default/es/layout.js'), loading: LoadingComponent})],
+        "wrappers": [dynamic({ loader: () => import(/* webpackChunkName: 'wrappers' */'../dumi/layout'), loading: LoadingComponent}), dynamic({ loader: () => import(/* webpackChunkName: 'wrappers' */'/Users/tumengerel/Documents/GitHub/front/node_modules/dumi-theme-default/es/layout.js'), loading: LoadingComponent})],
         "routes": [
           {
             "path": "/~docs",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'README.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/README.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'README.md' */'/Users/tumengerel/Documents/GitHub/front/README.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "locale": "en-US",
               "order": null,
               "filePath": "README.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "slugs": [
                 {
                   "depth": 1,
@@ -93,11 +93,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__index.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/index.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__index.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/index.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/index.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "title": "业务组件",
               "sidemenu": false,
               "slugs": [
@@ -161,11 +161,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/ant/card/changelog",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__card__CHANGELOG.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/card/CHANGELOG.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__card__CHANGELOG.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/card/CHANGELOG.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/card/CHANGELOG.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "slugs": [
                 {
                   "depth": 1,
@@ -1033,11 +1033,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/ant/card",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__card__README.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/card/README.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__card__README.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/card/README.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/card/README.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "slugs": [
                 {
                   "depth": 1,
@@ -1060,11 +1060,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/card",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__card__src__card.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/card/src/card.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__card__src__card.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/card/src/card.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/card/src/card.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "title": "ProCard - 高级卡片",
               "nav": {
                 "title": "组件",
@@ -1231,11 +1231,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/check-card",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__card__src__components__CheckCard__index.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/card/src/components/CheckCard/index.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__card__src__components__CheckCard__index.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/card/src/components/CheckCard/index.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/card/src/components/CheckCard/index.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "componentName": "CheckCard",
               "title": "CheckCard - 多选卡片",
               "order": 1,
@@ -1374,11 +1374,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/statistic-card",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__card__src__components__StatisticCard__index.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/card/src/components/StatisticCard/index.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__card__src__components__StatisticCard__index.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/card/src/components/StatisticCard/index.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/card/src/components/StatisticCard/index.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "componentName": "StatisticCard",
               "title": "StatisticCard - 指标卡",
               "order": 1,
@@ -1517,11 +1517,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/ant/descriptions/changelog",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__descriptions__CHANGELOG.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/descriptions/CHANGELOG.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__descriptions__CHANGELOG.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/descriptions/CHANGELOG.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/descriptions/CHANGELOG.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "slugs": [
                 {
                   "depth": 1,
@@ -2499,11 +2499,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/ant/descriptions",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__descriptions__README.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/descriptions/README.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__descriptions__README.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/descriptions/README.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/descriptions/README.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "slugs": [
                 {
                   "depth": 1,
@@ -2526,11 +2526,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/descriptions",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__descriptions__src__descriptions.en-US.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/descriptions/src/descriptions.en-US.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__descriptions__src__descriptions.en-US.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/descriptions/src/descriptions.en-US.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/descriptions/src/descriptions.en-US.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "title": "ProDescriptions",
               "legacy": "/descriptions",
               "group": {
@@ -2625,11 +2625,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/descriptions",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__descriptions__src__descriptions.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/descriptions/src/descriptions.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__descriptions__src__descriptions.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/descriptions/src/descriptions.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/descriptions/src/descriptions.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "title": "ProDescriptions - 定义列表",
               "legacy": "/descriptions",
               "group": {
@@ -2723,11 +2723,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/ant/field/changelog",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__field__CHANGELOG.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/field/CHANGELOG.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__field__CHANGELOG.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/field/CHANGELOG.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/field/CHANGELOG.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "slugs": [
                 {
                   "depth": 1,
@@ -3940,11 +3940,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/ant/field",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__field__README.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/field/README.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__field__README.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/field/README.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/field/README.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "slugs": [
                 {
                   "depth": 1,
@@ -3967,11 +3967,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/field",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__field__src__field.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/field/src/field.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__field__src__field.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/field/src/field.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/field/src/field.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "title": "ProField - 原子组件",
               "group": {
                 "path": "/~docs/components",
@@ -4008,11 +4008,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/ant/form/changelog",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__CHANGELOG.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/form/CHANGELOG.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__CHANGELOG.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/form/CHANGELOG.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/form/CHANGELOG.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "slugs": [
                 {
                   "depth": 1,
@@ -5625,11 +5625,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/ant/form",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__README.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/form/README.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__README.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/form/README.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/form/README.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "slugs": [
                 {
                   "depth": 1,
@@ -5652,11 +5652,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/form",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__src__form.en-US.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/form/src/form.en-US.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__src__form.en-US.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/form/src/form.en-US.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/form/src/form.en-US.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "title": "ProForm",
               "order": 1,
               "group": {
@@ -5750,11 +5750,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/form",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__src__form.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/form/src/form.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__src__form.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/form/src/form.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/form/src/form.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "title": "ProForm - 高级表单",
               "order": 1,
               "group": {
@@ -5852,11 +5852,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/field-set",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__src__components__FieldSet__index.en-US.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/form/src/components/FieldSet/index.en-US.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__src__components__FieldSet__index.en-US.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/form/src/components/FieldSet/index.en-US.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/form/src/components/FieldSet/index.en-US.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "componentName": "FieldSet",
               "title": "ProFormFields",
               "order": 1,
@@ -6031,11 +6031,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/field-set",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__src__components__FieldSet__index.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/form/src/components/FieldSet/index.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__src__components__FieldSet__index.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/form/src/components/FieldSet/index.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/form/src/components/FieldSet/index.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "componentName": "FieldSet",
               "title": "ProFormFields - 表单项",
               "order": 1,
@@ -6219,11 +6219,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/group",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__src__components__Group__index.en-US.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/form/src/components/Group/index.en-US.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__src__components__Group__index.en-US.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/form/src/components/Group/index.en-US.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/form/src/components/Group/index.en-US.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "componentName": "Group",
               "title": "Structured data",
               "order": 1,
@@ -6268,11 +6268,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/group",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__src__components__Group__index.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/form/src/components/Group/index.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__src__components__Group__index.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/form/src/components/Group/index.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/form/src/components/Group/index.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "componentName": "Group",
               "title": "ProFormList - 数据结构化",
               "order": 1,
@@ -6346,11 +6346,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/modal-form",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__src__components__ModalForm__index.en-US.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/form/src/components/ModalForm/index.en-US.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__src__components__ModalForm__index.en-US.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/form/src/components/ModalForm/index.en-US.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/form/src/components/ModalForm/index.en-US.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "title": "Modal/DrawerForm",
               "group": {
                 "path": "/~docs/components",
@@ -6418,11 +6418,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/modal-form",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__src__components__ModalForm__index.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/form/src/components/ModalForm/index.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__src__components__ModalForm__index.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/form/src/components/ModalForm/index.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/form/src/components/ModalForm/index.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "title": "Modal/Drawer - 浮层表单",
               "order": 2,
               "group": {
@@ -6490,11 +6490,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/query-filter",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__src__components__QueryFilter__index.en-US.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/form/src/components/QueryFilter/index.en-US.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__src__components__QueryFilter__index.en-US.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/form/src/components/QueryFilter/index.en-US.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/form/src/components/QueryFilter/index.en-US.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "title": "Query/LightFilter",
               "group": {
                 "path": "/~docs/components",
@@ -6582,11 +6582,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/query-filter",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__src__components__QueryFilter__index.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/form/src/components/QueryFilter/index.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__src__components__QueryFilter__index.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/form/src/components/QueryFilter/index.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/form/src/components/QueryFilter/index.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "title": "Query/LightFilter - 筛选表单",
               "order": 1,
               "group": {
@@ -6679,11 +6679,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/schema-form",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__src__components__SchemaForm__index.en-US.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/form/src/components/SchemaForm/index.en-US.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__src__components__SchemaForm__index.en-US.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/form/src/components/SchemaForm/index.en-US.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/form/src/components/SchemaForm/index.en-US.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "componentName": "SchemaForm",
               "title": "Schema Form",
               "order": 1,
@@ -6748,11 +6748,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/schema-form",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__src__components__SchemaForm__index.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/form/src/components/SchemaForm/index.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__src__components__SchemaForm__index.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/form/src/components/SchemaForm/index.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/form/src/components/SchemaForm/index.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "componentName": "SchemaForm",
               "title": "Schema Form - JSON 表单",
               "order": 1,
@@ -6816,11 +6816,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/steps-form",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__src__components__StepsForm__index.en-US.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/form/src/components/StepsForm/index.en-US.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__src__components__StepsForm__index.en-US.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/form/src/components/StepsForm/index.en-US.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/form/src/components/StepsForm/index.en-US.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "title": "StepsForm",
               "order": 1,
               "group": {
@@ -6874,11 +6874,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/steps-form",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__src__components__StepsForm__index.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/form/src/components/StepsForm/index.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__form__src__components__StepsForm__index.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/form/src/components/StepsForm/index.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/form/src/components/StepsForm/index.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "title": "StepsForm - 分步表单",
               "order": 1,
               "group": {
@@ -6936,11 +6936,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/ant/layout/changelog",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__layout__CHANGELOG.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/layout/CHANGELOG.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__layout__CHANGELOG.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/layout/CHANGELOG.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/layout/CHANGELOG.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "slugs": [
                 {
                   "depth": 1,
@@ -8103,11 +8103,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/ant/layout",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__layout__README.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/layout/README.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__layout__README.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/layout/README.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/layout/README.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "slugs": [
                 {
                   "depth": 1,
@@ -8140,11 +8140,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/layout",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__layout__src__layout.en-US.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/layout/src/layout.en-US.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__layout__src__layout.en-US.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/layout/src/layout.en-US.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/layout/src/layout.en-US.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "title": "ProLayout",
               "order": 0,
               "legacy": "/layout",
@@ -8349,11 +8349,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/layout",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__layout__src__layout.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/layout/src/layout.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__layout__src__layout.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/layout/src/layout.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/layout/src/layout.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "title": "ProLayout - 高级布局",
               "order": 0,
               "legacy": "/layout",
@@ -8582,11 +8582,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/page-container",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__layout__src__components__PageContainer__index.en-US.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/layout/src/components/PageContainer/index.en-US.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__layout__src__components__PageContainer__index.en-US.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/layout/src/components/PageContainer/index.en-US.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/layout/src/components/PageContainer/index.en-US.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "componentName": "PageContainer",
               "title": "PageContainer",
               "group": {
@@ -8645,11 +8645,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/page-container",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__layout__src__components__PageContainer__index.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/layout/src/components/PageContainer/index.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__layout__src__components__PageContainer__index.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/layout/src/components/PageContainer/index.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/layout/src/components/PageContainer/index.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "componentName": "PageContainer",
               "title": "PageContainer - 页容器",
               "group": {
@@ -8712,11 +8712,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/water-mark",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__layout__src__components__WaterMark__index.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/layout/src/components/WaterMark/index.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__layout__src__components__WaterMark__index.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/layout/src/components/WaterMark/index.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/layout/src/components/WaterMark/index.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "componentName": "WaterMark",
               "title": "WaterMark - 水印组件",
               "order": 0,
@@ -8791,11 +8791,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/ant/list/changelog",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__list__CHANGELOG.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/list/CHANGELOG.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__list__CHANGELOG.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/list/CHANGELOG.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/list/CHANGELOG.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "slugs": [
                 {
                   "depth": 1,
@@ -9903,11 +9903,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/ant/list",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__list__README.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/list/README.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__list__README.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/list/README.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/list/README.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "slugs": [
                 {
                   "depth": 1,
@@ -9950,11 +9950,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/list",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__list__src__list.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/list/src/list.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__list__src__list.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/list/src/list.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/list/src/list.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "title": "ProList - 高级列表",
               "order": 12,
               "group": {
@@ -10102,11 +10102,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/ant/provider/changelog",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__provider__CHANGELOG.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/provider/CHANGELOG.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__provider__CHANGELOG.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/provider/CHANGELOG.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/provider/CHANGELOG.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "slugs": [
                 {
                   "depth": 1,
@@ -10464,11 +10464,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/ant/provider",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__provider__README.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/provider/README.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__provider__README.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/provider/README.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/provider/README.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "slugs": [
                 {
                   "depth": 1,
@@ -10491,11 +10491,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/ant/skeleton/changelog",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__skeleton__CHANGELOG.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/skeleton/CHANGELOG.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__skeleton__CHANGELOG.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/skeleton/CHANGELOG.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/skeleton/CHANGELOG.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "slugs": [
                 {
                   "depth": 1,
@@ -10598,11 +10598,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/ant/skeleton",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__skeleton__README.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/skeleton/README.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__skeleton__README.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/skeleton/README.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/skeleton/README.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "slugs": [
                 {
                   "depth": 1,
@@ -10625,11 +10625,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/skeleton",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__skeleton__src__skeleton.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/skeleton/src/skeleton.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__skeleton__src__skeleton.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/skeleton/src/skeleton.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/skeleton/src/skeleton.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "title": "ProSkeleton - 骨架屏",
               "group": {
                 "path": "/~docs/components",
@@ -10681,11 +10681,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/ant/table/changelog",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__table__CHANGELOG.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/table/CHANGELOG.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__table__CHANGELOG.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/table/CHANGELOG.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/table/CHANGELOG.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "slugs": [
                 {
                   "depth": 1,
@@ -12333,11 +12333,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/ant/table",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__table__README.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/table/README.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__table__README.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/table/README.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/table/README.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "slugs": [
                 {
                   "depth": 1,
@@ -12390,11 +12390,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/table",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__table__src__table.en-US.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/table/src/table.en-US.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__table__src__table.en-US.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/table/src/table.en-US.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/table/src/table.en-US.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "title": "ProTable",
               "order": 0,
               "legacy": "/table",
@@ -12644,11 +12644,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/table",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__table__src__table.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/table/src/table.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__table__src__table.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/table/src/table.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/table/src/table.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "title": "ProTable - 高级表格",
               "order": 0,
               "legacy": "/table",
@@ -12942,11 +12942,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/editable-table",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__table__src__components__EditableTable__index.en-US.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/table/src/components/EditableTable/index.en-US.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__table__src__components__EditableTable__index.en-US.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/table/src/components/EditableTable/index.en-US.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/table/src/components/EditableTable/index.en-US.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "componentName": "EditableTable",
               "title": "EditableProTable",
               "group": {
@@ -13035,11 +13035,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/editable-table",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__table__src__components__EditableTable__index.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/table/src/components/EditableTable/index.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__table__src__components__EditableTable__index.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/table/src/components/EditableTable/index.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/table/src/components/EditableTable/index.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "componentName": "EditableTable",
               "title": "EditableProTable - 可编辑表格",
               "group": {
@@ -13132,11 +13132,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/ant/utils/changelog",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__utils__CHANGELOG.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/utils/CHANGELOG.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__utils__CHANGELOG.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/utils/CHANGELOG.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/utils/CHANGELOG.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "slugs": [
                 {
                   "depth": 1,
@@ -14124,11 +14124,11 @@ export function getRoutes() {
           },
           {
             "path": "/~docs/components/ant/utils",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__utils__README.md' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/components/ant/utils/README.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__ant__utils__README.md' */'/Users/tumengerel/Documents/GitHub/front/src/components/ant/utils/README.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/ant/utils/README.md",
-              "updatedTime": 1639723443000,
+              "updatedTime": 1639725706000,
               "slugs": [
                 {
                   "depth": 1,
@@ -14188,7 +14188,7 @@ export function getRoutes() {
             "path": "/user/login",
             "layout": false,
             "name": "login",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__user__Login' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/pages/user/Login'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__user__Login' */'/Users/tumengerel/Documents/GitHub/front/src/pages/user/Login'), loading: LoadingComponent}),
             "exact": true
           },
           {
@@ -14199,18 +14199,18 @@ export function getRoutes() {
           {
             "icon": "smile",
             "path": "/user/register-result",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__user__register-result' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/pages/user/register-result'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__user__register-result' */'/Users/tumengerel/Documents/GitHub/front/src/pages/user/register-result'), loading: LoadingComponent}),
             "exact": true
           },
           {
             "name": "register",
             "icon": "smile",
             "path": "/user/register",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__user__register' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/pages/user/register'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__user__register' */'/Users/tumengerel/Documents/GitHub/front/src/pages/user/register'), loading: LoadingComponent}),
             "exact": true
           },
           {
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__404' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/pages/404'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__404' */'/Users/tumengerel/Documents/GitHub/front/src/pages/404'), loading: LoadingComponent}),
             "exact": true
           }
         ]
@@ -14219,21 +14219,21 @@ export function getRoutes() {
         "icon": "home",
         "name": "welcome",
         "path": "/welcome",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__welcome' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/pages/welcome'), loading: LoadingComponent}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__welcome' */'/Users/tumengerel/Documents/GitHub/front/src/pages/welcome'), loading: LoadingComponent}),
         "exact": true
       },
       {
         "name": "monitor",
         "icon": "dashboard",
         "path": "/monitor",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__dashboard__monitor' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/pages/dashboard/monitor'), loading: LoadingComponent}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__dashboard__monitor' */'/Users/tumengerel/Documents/GitHub/front/src/pages/dashboard/monitor'), loading: LoadingComponent}),
         "exact": true
       },
       {
         "name": "analysis",
         "icon": "fund",
         "path": "/analysis",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__dashboard__analysis' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/pages/dashboard/analysis'), loading: LoadingComponent}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__dashboard__analysis' */'/Users/tumengerel/Documents/GitHub/front/src/pages/dashboard/analysis'), loading: LoadingComponent}),
         "exact": true
       },
       {
@@ -14244,7 +14244,7 @@ export function getRoutes() {
           {
             "path": "/list/search",
             "name": "search-list",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__list__search' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/pages/list/search'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__list__search' */'/Users/tumengerel/Documents/GitHub/front/src/pages/list/search'), loading: LoadingComponent}),
             "routes": [
               {
                 "path": "/list/search",
@@ -14255,21 +14255,21 @@ export function getRoutes() {
                 "name": "articles",
                 "icon": "smile",
                 "path": "/list/search/articles",
-                "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__list__search__articles' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/pages/list/search/articles'), loading: LoadingComponent}),
+                "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__list__search__articles' */'/Users/tumengerel/Documents/GitHub/front/src/pages/list/search/articles'), loading: LoadingComponent}),
                 "exact": true
               },
               {
                 "name": "projects",
                 "icon": "smile",
                 "path": "/list/search/projects",
-                "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__list__search__projects' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/pages/list/search/projects'), loading: LoadingComponent}),
+                "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__list__search__projects' */'/Users/tumengerel/Documents/GitHub/front/src/pages/list/search/projects'), loading: LoadingComponent}),
                 "exact": true
               },
               {
                 "name": "applications",
                 "icon": "smile",
                 "path": "/list/search/applications",
-                "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__list__search__applications' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/pages/list/search/applications'), loading: LoadingComponent}),
+                "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__list__search__applications' */'/Users/tumengerel/Documents/GitHub/front/src/pages/list/search/applications'), loading: LoadingComponent}),
                 "exact": true
               }
             ]
@@ -14283,21 +14283,21 @@ export function getRoutes() {
             "name": "table-list",
             "icon": "smile",
             "path": "/list/table-list",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__modules__base' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/pages/modules/base'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__modules__base' */'/Users/tumengerel/Documents/GitHub/front/src/pages/modules/base'), loading: LoadingComponent}),
             "exact": true
           },
           {
             "name": "basic-list",
             "icon": "smile",
             "path": "/list/basic-list",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__list__basic-list' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/pages/list/basic-list'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__list__basic-list' */'/Users/tumengerel/Documents/GitHub/front/src/pages/list/basic-list'), loading: LoadingComponent}),
             "exact": true
           },
           {
             "name": "card-list",
             "icon": "smile",
             "path": "/list/card-list",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__list__card-list' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/pages/list/card-list'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__list__card-list' */'/Users/tumengerel/Documents/GitHub/front/src/pages/list/card-list'), loading: LoadingComponent}),
             "exact": true
           }
         ]
@@ -14316,14 +14316,14 @@ export function getRoutes() {
             "name": "basic",
             "icon": "smile",
             "path": "/profile/basic",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__profile__basic' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/pages/profile/basic'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__profile__basic' */'/Users/tumengerel/Documents/GitHub/front/src/pages/profile/basic'), loading: LoadingComponent}),
             "exact": true
           },
           {
             "name": "advanced",
             "icon": "smile",
             "path": "/profile/advanced",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__profile__advanced' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/pages/profile/advanced'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__profile__advanced' */'/Users/tumengerel/Documents/GitHub/front/src/pages/profile/advanced'), loading: LoadingComponent}),
             "exact": true
           }
         ]
@@ -14342,14 +14342,14 @@ export function getRoutes() {
             "name": "success",
             "icon": "smile",
             "path": "/result/success",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__result__success' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/pages/result/success'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__result__success' */'/Users/tumengerel/Documents/GitHub/front/src/pages/result/success'), loading: LoadingComponent}),
             "exact": true
           },
           {
             "name": "fail",
             "icon": "smile",
             "path": "/result/fail",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__result__fail' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/pages/result/fail'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__result__fail' */'/Users/tumengerel/Documents/GitHub/front/src/pages/result/fail'), loading: LoadingComponent}),
             "exact": true
           }
         ]
@@ -14368,14 +14368,14 @@ export function getRoutes() {
             "name": "types",
             "icon": "smile",
             "path": "/classification/types",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__modules__classification__types' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/pages/modules/classification/types'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__modules__classification__types' */'/Users/tumengerel/Documents/GitHub/front/src/pages/modules/classification/types'), loading: LoadingComponent}),
             "exact": true
           },
           {
             "name": "classes",
             "icon": "smile",
             "path": "/classification/classes",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__modules__classification__classes' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/pages/modules/classification/classes'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__modules__classification__classes' */'/Users/tumengerel/Documents/GitHub/front/src/pages/modules/classification/classes'), loading: LoadingComponent}),
             "exact": true
           }
         ]
@@ -14394,21 +14394,21 @@ export function getRoutes() {
             "name": "static",
             "icon": "smile",
             "path": "/lut/static",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__modules__lut__static' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/pages/modules/lut/static'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__modules__lut__static' */'/Users/tumengerel/Documents/GitHub/front/src/pages/modules/lut/static'), loading: LoadingComponent}),
             "exact": true
           },
           {
             "name": "step-form",
             "icon": "smile",
             "path": "/form/step-form",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__form__step-form' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/pages/form/step-form'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__form__step-form' */'/Users/tumengerel/Documents/GitHub/front/src/pages/form/step-form'), loading: LoadingComponent}),
             "exact": true
           },
           {
             "name": "advanced-form",
             "icon": "smile",
             "path": "/form/advanced-form",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__form__advanced-form' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/pages/form/advanced-form'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__form__advanced-form' */'/Users/tumengerel/Documents/GitHub/front/src/pages/form/advanced-form'), loading: LoadingComponent}),
             "exact": true
           }
         ]
@@ -14427,21 +14427,21 @@ export function getRoutes() {
             "name": "basemaps",
             "icon": "smile",
             "path": "/sys/basemaps",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__modules__system__map__basemaps' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/pages/modules/system/map/basemaps'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__modules__system__map__basemaps' */'/Users/tumengerel/Documents/GitHub/front/src/pages/modules/system/map/basemaps'), loading: LoadingComponent}),
             "exact": true
           },
           {
             "name": "layers",
             "icon": "smile",
             "path": "/sys/layers",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__modules__system__map__layers' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/pages/modules/system/map/layers'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__modules__system__map__layers' */'/Users/tumengerel/Documents/GitHub/front/src/pages/modules/system/map/layers'), loading: LoadingComponent}),
             "exact": true
           },
           {
             "name": "500",
             "icon": "smile",
             "path": "/exception/500",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__exception__500' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/pages/exception/500'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__exception__500' */'/Users/tumengerel/Documents/GitHub/front/src/pages/exception/500'), loading: LoadingComponent}),
             "exact": true
           }
         ]
@@ -14460,14 +14460,14 @@ export function getRoutes() {
             "name": "center",
             "icon": "smile",
             "path": "/account/center",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__account__center' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/pages/account/center'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__account__center' */'/Users/tumengerel/Documents/GitHub/front/src/pages/account/center'), loading: LoadingComponent}),
             "exact": true
           },
           {
             "name": "settings",
             "icon": "smile",
             "path": "/account/settings",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__account__settings' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/pages/account/settings'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__account__settings' */'/Users/tumengerel/Documents/GitHub/front/src/pages/account/settings'), loading: LoadingComponent}),
             "exact": true
           }
         ]
@@ -14476,7 +14476,7 @@ export function getRoutes() {
         "icon": "home",
         "name": "admin",
         "path": "/admin",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__admin' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/pages/admin'), loading: LoadingComponent}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__admin' */'/Users/tumengerel/Documents/GitHub/front/src/pages/admin'), loading: LoadingComponent}),
         "exact": true
       },
       {
@@ -14490,7 +14490,7 @@ export function getRoutes() {
         "exact": true
       },
       {
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__404' */'/Users/tumengerel/Documents/GitHub/front/ams-front-ts/src/pages/404'), loading: LoadingComponent}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__404' */'/Users/tumengerel/Documents/GitHub/front/src/pages/404'), loading: LoadingComponent}),
         "exact": true
       }
     ]

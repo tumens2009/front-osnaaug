@@ -5,8 +5,8 @@ import '../global.tsx';
 import { plugin } from './core/plugin';
 import './core/pluginRegister';
 import { createHistory } from './core/history';
-import { ApplyPluginsType } from '/Users/tumengerel/Documents/GitHub/front/ams-front-ts/node_modules/@umijs/runtime';
-import { renderClient } from '/Users/tumengerel/Documents/GitHub/front/ams-front-ts/node_modules/@umijs/renderer-react';
+import { ApplyPluginsType } from '/Users/tumengerel/Documents/GitHub/front/node_modules/@umijs/runtime';
+import { renderClient } from '/Users/tumengerel/Documents/GitHub/front/node_modules/@umijs/renderer-react';
 import { getRoutes } from './core/routes';
 
 

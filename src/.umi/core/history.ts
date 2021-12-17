@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { createBrowserHistory, History } from '/Users/tumengerel/Documents/GitHub/front/ams-front-ts/node_modules/@umijs/runtime';
+import { createBrowserHistory, History } from '/Users/tumengerel/Documents/GitHub/front/node_modules/@umijs/runtime';
 
 let options = {
   "basename": "/"
