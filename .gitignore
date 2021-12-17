@@ -84,3 +84,4 @@ typings/
 .umi-test
 *.sw*
 *.un~
+*.ts
