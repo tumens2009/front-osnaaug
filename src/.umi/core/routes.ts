@@ -14329,32 +14329,6 @@ export function getRoutes() {
         ]
       },
       {
-        "name": "result",
-        "icon": "CheckCircleOutlined",
-        "path": "/result",
-        "routes": [
-          {
-            "path": "/result",
-            "redirect": "/result/success",
-            "exact": true
-          },
-          {
-            "name": "success",
-            "icon": "smile",
-            "path": "/result/success",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__result__success' */'/Users/tumengerel/Documents/GitHub/front/src/pages/result/success'), loading: LoadingComponent}),
-            "exact": true
-          },
-          {
-            "name": "fail",
-            "icon": "smile",
-            "path": "/result/fail",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__result__fail' */'/Users/tumengerel/Documents/GitHub/front/src/pages/result/fail'), loading: LoadingComponent}),
-            "exact": true
-          }
-        ]
-      },
-      {
         "icon": "question",
         "path": "/classification",
         "name": "classification",
@@ -14388,6 +14362,13 @@ export function getRoutes() {
           {
             "path": "/lut",
             "redirect": "/lut/static",
+            "exact": true
+          },
+          {
+            "name": "company",
+            "icon": "smile",
+            "path": "/lut/company",
+            "redirect": "/lut/company",
             "exact": true
           },
           {

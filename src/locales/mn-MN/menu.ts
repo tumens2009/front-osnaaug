@@ -20,9 +20,9 @@ export default {
   'menu.profile.basic': 'Basic Profile',
   'menu.profile.advanced': 'Advanced Profile',
 
-  'menu.result': 'Харилцагч',
-  'menu.result.success': 'Хуулийн этгээд',
-  'menu.result.fail': 'Хувь хүн',
+  // 'menu.customers': 'Харилцагч',
+  // 'menu.customers.companies': 'Хуулийн этгээд',
+  // 'menu.result.fail': 'Хувь хүн',
   
   // Lookup - Админ болон бусад хэрэглэгч дээр ялгаатай харагдана.
   'menu.classification': 'Ангиллын сан',
@@ -35,6 +35,7 @@ export default {
   // Гадаад хүснэгт/ Статик бүртгэл
   'menu.lut': 'Лавлах сан',
   'menu.lut.static': 'Унших',
+  'menu.lut.company': 'Компани',
   'menu.lut.editable': 'Засварлах',
   'menu.form.step-form.info': 'Step Form(write transfer information)',
   'menu.form.step-form.confirm': 'Step Form(confirm transfer information)',

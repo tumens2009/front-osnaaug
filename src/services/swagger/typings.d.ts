@@ -17,7 +17,24 @@ declare namespace API {
      }
     
 
-  type AmsBasemapsWithRelations =
+  type getAmsBasemaps =
+     {
+      'baseTypeId'?: number;
+      'description'?: string;
+      'url'?: string;
+     }
+    
+
+  type amsBasemapsPartial =
+     {
+      'id'?: number;
+      'baseTypeId'?: number;
+      'description'?: string;
+      'url'?: string;
+     }
+    
+
+  type amsBasemapId =
      {
       'id': number;
       'baseTypeId'?: number;
@@ -32,6 +49,127 @@ declare namespace API {
       'baseTypeId'?: number;
       'description'?: string;
       'url'?: string;
+     }
+    
+
+  type AmsCustomer =
+     {
+      'id': string;
+      'apartmentId'?: string;
+      'oldNumber'?: string;
+      'number'?: string;
+      'activeFlg'?: number;
+      'deleteFlg'?: string;
+      'createUser'?: string;
+      'createDate'?: string;
+      'updateUser'?: string;
+      'updateDate'?: string;
+      'numberType'?: string;
+      'division'?: string;
+      'direction'?: string;
+      'phone'?: number;
+      'smsPhone'?: number;
+      'ccode'?: string;
+      'noat'?: boolean;
+      'branchId'?: string;
+      'phone1'?: string;
+      'discount'?: boolean;
+      'accountNumber'?: string;
+      'userFlg'?: boolean;
+     }
+    
+
+  type NewAmsCustomer =
+     {
+      'apartmentId'?: string;
+      'oldNumber'?: string;
+      'number'?: string;
+      'activeFlg'?: number;
+      'deleteFlg'?: string;
+      'createUser'?: string;
+      'createDate'?: string;
+      'updateUser'?: string;
+      'updateDate'?: string;
+      'numberType'?: string;
+      'division'?: string;
+      'direction'?: string;
+      'phone'?: number;
+      'smsPhone'?: number;
+      'ccode'?: string;
+      'noat'?: boolean;
+      'branchId'?: string;
+      'phone1'?: string;
+      'discount'?: boolean;
+      'accountNumber'?: string;
+      'userFlg'?: boolean;
+     }
+    
+
+  type getCustomers =
+     {
+      'id': string;
+      'apartmentId'?: string;
+      'oldNumber'?: string;
+      'number'?: string;
+      'activeFlg'?: number;
+      'deleteFlg'?: string;
+      'phone'?: number;
+      'ccode'?: string;
+      'accountNumber'?: string;
+     }
+    
+
+  type AmsCustomerPartial =
+     {
+      'id'?: string;
+      'apartmentId'?: string;
+      'oldNumber'?: string;
+      'number'?: string;
+      'activeFlg'?: number;
+      'deleteFlg'?: string;
+      'createUser'?: string;
+      'createDate'?: string;
+      'updateUser'?: string;
+      'updateDate'?: string;
+      'numberType'?: string;
+      'division'?: string;
+      'direction'?: string;
+      'phone'?: number;
+      'smsPhone'?: number;
+      'ccode'?: string;
+      'noat'?: boolean;
+      'branchId'?: string;
+      'phone1'?: string;
+      'discount'?: boolean;
+      'accountNumber'?: string;
+      'userFlg'?: boolean;
+     }
+    
+
+  type AmsCustomerWithRelations =
+     {
+      'id': string;
+      'apartmentId'?: string;
+      'oldNumber'?: string;
+      'number'?: string;
+      'activeFlg'?: number;
+      'deleteFlg'?: string;
+      'createUser'?: string;
+      'createDate'?: string;
+      'updateUser'?: string;
+      'updateDate'?: string;
+      'numberType'?: string;
+      'division'?: string;
+      'direction'?: string;
+      'phone'?: number;
+      'smsPhone'?: number;
+      'ccode'?: string;
+      'noat'?: boolean;
+      'branchId'?: string;
+      'phone1'?: string;
+      'discount'?: boolean;
+      'accountNumber'?: string;
+      'userFlg'?: boolean;
      }
     
 
@@ -97,7 +235,7 @@ declare namespace API {
      }
     
 
-  type AmsMapLayersWithRelations =
+  type amsMapLayers =
      {
       'id': number;
       'categoryId'?: number;
@@ -108,8 +246,6 @@ declare namespace API {
       'isActive'?: number;
       'isOnLoadVisible'?: number;
       'isHasPopup'?: number;
-      'createdAt'?: string;
-      'updatedAt'?: string;
      }
     
 
@@ -119,6 +255,22 @@ declare namespace API {
       'categoryId'?: number;
       'layerType'?: number;
       'name'?: string;
+      'url'?: string;
+      'orderIndex'?: number;
+      'isActive'?: number;
+      'isOnLoadVisible'?: number;
+      'isHasPopup'?: number;
+      'createdAt'?: string;
+      'updatedAt'?: string;
+     }
+    
+
+  type AmsMapLayersWithRelations =
+     {
+      'id': number;
+      'categoryId'?: number;
+      'layerType'?: number;
+      'name': string;
       'url'?: string;
       'orderIndex'?: number;
       'isActive'?: number;
@@ -200,6 +352,30 @@ declare namespace API {
       'where'?: Record<string, any>;
       /** AmsBasemaps.Fields */
       'fields'?: { id?: boolean; baseTypeId?: boolean; description?: boolean; url?: boolean; } | "id" | "baseTypeId" | "description" | "url"[];
+     }
+    
+
+  type Filter =
+     {
+      'offset'?: number;
+      'limit'?: number;
+      'skip'?: number;
+      'order'?: string | string[];
+      /** AmsCustomer.Fields */
+      'fields'?: { id?: boolean; apartmentId?: boolean; oldNumber?: boolean; number?: boolean; activeFlg?: boolean; deleteFlg?: boolean; createUser?: boolean; createDate?: boolean; updateUser?: boolean; updateDate?: boolean; numberType?: boolean; division?: boolean; direction?: boolean; phone?: boolean; smsPhone?: boolean; ccode?: boolean; noat?: boolean; branchId?: boolean; phone1?: boolean; discount?: boolean; accountNumber?: boolean; userFlg?: boolean; } | "id" | "apartmentId" | "oldNumber" | "number" | "activeFlg" | "deleteFlg" | "createUser" | "createDate" | "updateUser" | "updateDate" | "numberType" | "division" | "direction" | "phone" | "smsPhone" | "ccode" | "noat" | "branchId" | "phone1" | "discount" | "accountNumber" | "userFlg"[];
+     }
+    
+
+  type Filter1 =
+     {
+      'offset'?: number;
+      'limit'?: number;
+      'skip'?: number;
+      'order'?: string | string[];
+      /** AmsCustomer.WhereFilter */
+      'where'?: Record<string, any>;
+      /** AmsCustomer.Fields */
+      'fields'?: { id?: boolean; apartmentId?: boolean; oldNumber?: boolean; number?: boolean; activeFlg?: boolean; deleteFlg?: boolean; createUser?: boolean; createDate?: boolean; updateUser?: boolean; updateDate?: boolean; numberType?: boolean; division?: boolean; direction?: boolean; phone?: boolean; smsPhone?: boolean; ccode?: boolean; noat?: boolean; branchId?: boolean; phone1?: boolean; discount?: boolean; accountNumber?: boolean; userFlg?: boolean; } | "id" | "apartmentId" | "oldNumber" | "number" | "activeFlg" | "deleteFlg" | "createUser" | "createDate" | "updateUser" | "updateDate" | "numberType" | "division" | "direction" | "phone" | "smsPhone" | "ccode" | "noat" | "branchId" | "phone1" | "discount" | "accountNumber" | "userFlg"[];
      }
     
 
@@ -310,6 +486,49 @@ declare namespace API {
   type updateByIdParams =
      {
       'id': number;
+     }
+    
+
+  type findParams =
+     {
+      'filter'?: any;
+     }
+    
+
+  type updateAllParams =
+     {
+      'where'?: any;
+     }
+    
+
+  type countParams =
+     {
+      'where'?: any;
+     }
+    
+
+  type findByIdParams =
+     {
+      'id': string;
+      'filter'?: any;
+     }
+    
+
+  type replaceByIdParams =
+     {
+      'id': string;
+     }
+    
+
+  type deleteByIdParams =
+     {
+      'id': string;
+     }
+    
+
+  type updateByIdParams =
+     {
+      'id': string;
      }
     
 

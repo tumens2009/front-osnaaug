@@ -24,7 +24,7 @@ export async function AmsBasemapsControllerFindById(
   options?: { [key: string]: any },
 ) {
   const { id: param0, ...queryParams } = params;
-  return request<API.AmsBasemapsWithRelations>(`/ams-basemaps/${param0}`, {
+  return request<API.amsBasemapId>(`/ams-basemaps/${param0}`, {
     method: 'GET',
     params: {
       ...queryParams,
@@ -91,7 +91,7 @@ export async function AmsBasemapsControllerFind(
   params: API.AmsBasemapsControllerFindParams,
   options?: { [key: string]: any },
 ) {
-  return request<API.AmsBasemapsWithRelations[]>('/ams-basemaps', {
+  return request<API.getAmsBasemaps[]>('/ams-basemaps', {
     method: 'GET',
     params: {
       ...params,
@@ -119,7 +119,7 @@ export async function AmsBasemapsControllerCreate(
 export async function AmsBasemapsControllerUpdateAll(
   // 叠加生成的Param类型 (非body参数swagger默认没有生成对象)
   params: API.AmsBasemapsControllerUpdateAllParams,
-  body: API.AmsBasemapsPartial,
+  body: API.amsBasemapsPartial,
   options?: { [key: string]: any },
 ) {
   return request<API.Count>('/ams-basemaps', {

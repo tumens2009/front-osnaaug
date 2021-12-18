@@ -161,29 +161,29 @@ export default defineConfig({
         },
       ],
     },
-    {
-      name: 'result',
-      icon: 'CheckCircleOutlined',
-      path: '/result',
-      routes: [
-        {
-          path: '/result',
-          redirect: '/result/success',
-        },
-        {
-          name: 'success',
-          icon: 'smile',
-          path: '/result/success',
-          component: './result/success',
-        },
-        {
-          name: 'fail',
-          icon: 'smile',
-          path: '/result/fail',
-          component: './result/fail',
-        },
-      ],
-    },
+    // {
+    //   name: 'customers',
+    //   icon: 'CheckCircleOutlined',
+    //   path: '/customers',
+    //   routes: [
+    //     {
+    //       path: '/result',
+    //       redirect: '/customers/companies',
+    //     },
+    //     {
+    //       name: 'companies',
+    //       icon: 'smile',
+    //       path: '/customers/companies',
+    //       component: './modules/customers/companies',
+    //     },
+    //     {
+    //       name: 'fail',
+    //       icon: 'smile',
+    //       path: '/result/fail',
+    //       component: './result/fail',
+    //     },
+    //   ],
+    // },
     {
       icon: 'question',
       path: '/classification',
@@ -217,6 +217,12 @@ export default defineConfig({
           redirect: '/lut/static',
         },
         {
+          name: 'company',
+          icon: 'smile',
+          path: '/lut/company',
+          redirect: '/lut/company',
+        },
+        {
           name: 'static',
           icon: 'smile',
           path: '/lut/static',
@@ -235,6 +241,7 @@ export default defineConfig({
           component: './form/advanced-form',
         },
       ],
+      
     },
     {
       name: 'sys',

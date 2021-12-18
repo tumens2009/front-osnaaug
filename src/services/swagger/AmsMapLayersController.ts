@@ -91,7 +91,7 @@ export async function AmsMapLayersControllerFind(
   params: API.AmsMapLayersControllerFindParams,
   options?: { [key: string]: any },
 ) {
-  return request<API.AmsMapLayersWithRelations[]>('/ams-map-layers', {
+  return request<API.amsMapLayers[]>('/ams-map-layers', {
     method: 'GET',
     params: {
       ...params,
